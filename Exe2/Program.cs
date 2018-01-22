@@ -6,10 +6,16 @@ using System.Threading.Tasks;
 
 namespace Exe2
 {
-    class Program
+    internal static class Program
     {
-        static void Main(string[] args)
+        private static void Main(string[] args)
         {
+            int[] numeros = { 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, 144 };
+
+            var allOdd = MathHelper.SequenceOdd(numeros);
+
+            Console.WriteLine($"Somente ímpares? {allOdd}");
+            Console.Read();
         }
     }
 }
